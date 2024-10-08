@@ -1,0 +1,53 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="posttest5"/>
+        <attribute name="authors" value="USER"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-10-08 09.23.40 PM"/>
+        <attribute name="created" value="VVNFUjtERVNLVE9QLU5EQURQRk87MjAyNC0xMC0wNTswNjo0NjoyMyBQTTsyNjg5"/>
+        <attribute name="edited" value="VVNFUjtERVNLVE9QLU5EQURQRk87MjAyNC0xMC0wODswOToxNDo1NyBQTTs3OzI4MTE="/>
+        <attribute name="edited" value="cHBlbGE7TEFQVE9QLTZIRUhVRkk5OzIwMjQtMTAtMDg7MDkuMjMuNDAgUE07MTsyOTU0"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="opsi, namalengkap, Username, psw, alamat" type="String" array="False" size=""/>
+            <declare name="nik" type="Integer" array="False" size=""/>
+            <output expression="&quot;Selamat datang di Aplikasi Pendaftaran Pelatihan Kerja! &quot;" newline="True"/>
+            <output expression="&quot;Silahkan pilih Daftar Akun Jika Belum Punya Akun &amp; Jika Sudah Memiliki Akun Silahkan Login : &quot;" newline="True"/>
+            <output expression="&quot;1. Daftar Akun, 2. Login, 3. Exit &quot;" newline="True"/>
+            <input variable="opsi"/>
+            <if expression="opsi=1">
+                <then>
+                    <output expression="&quot;Hallo Pengguna Baru? Ayo Buat Akun Dulu!&quot;" newline="True"/>
+                    <output expression="&quot;Nama Lengkap : &quot;" newline="True"/>
+                    <input variable="namaLengkap"/>
+                    <output expression="&quot;User Name : &quot;" newline="True"/>
+                    <input variable="UserName"/>
+                    <output expression="&quot;Password : &quot;" newline="True"/>
+                    <input variable="psw"/>
+                    <output expression="&quot;Nomor Induk Kependudukan (NIK) :&quot;" newline="True"/>
+                    <input variable="nik"/>
+                    <output expression="&quot;Alamat Domisili Sesuai KTP : &quot;" newline="True"/>
+                    <input variable="alamat"/>
+                </then>
+                <else>
+                    <if expression="opsi=2">
+                        <then>
+                            <output expression="&quot;Silahkan Login dengan User Anda : &quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <if expression="opsi=3">
+                                <then>
+                                    <output expression="&quot;Silahkan Keluar dari System !&quot;" newline="True"/>
+                                </then>
+                                <else/>
+                            </if>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
